@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Your App</h1>
+            <p>A modern platform for seamless experiences.</p>
+            <div class="hero-buttons">
+                <a href="{% url 'signin' %}" class="btn btn-primary">Sign In</a>
+                <a href="{% url 'sign_up' %}" class="btn btn-secondary">Sign Up</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Why Choose Us?</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>Fast</h3>
+                <p>Experience lightning-fast performance.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Secure</h3>
+                <p>Your data is protected with top-tier security.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Simple</h3>
+                <p>Intuitive design for effortless navigation.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Your App. All rights reserved.</p>
+    </footer>
+{% endblock %}
